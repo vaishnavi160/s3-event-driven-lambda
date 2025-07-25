@@ -69,8 +69,9 @@ To create a layer:
 (Replace 3.9 with your runtime version.)
 - Zip the folder and publish it as a Layer.
 - In your Lambda function, add the Layer under "Layers" in the AWS Console or via CLI.
+- In code, we can import the packages using simple import from statment.
 
-Number of layers added will be displayed as above
+Number of layers added will be displayed as below
 <img width="523" height="190" alt="image" src="https://github.com/user-attachments/assets/c3c38231-a93e-45a7-996a-d91a010014c6" />
 
 
