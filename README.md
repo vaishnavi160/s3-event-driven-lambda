@@ -61,6 +61,20 @@ If your Lambda function uses external Python libraries (e.g., requests, pandas, 
 
 ---
 
+## 🧱 Optional: Using Lambda Layers for Dependencies
+If your Lambda function uses large or reusable dependencies (e.g., pandas, numpy, or custom shared code), you can package them separately as a Lambda Layer. Layers allow you to keep your deployment package small and reuse the same libraries across multiple Lambda functions.
+
+To create a layer:
+- Install the dependency into a folder structure like python/lib/python3.9/site-packages/
+(Replace 3.9 with your runtime version.)
+- Zip the folder and publish it as a Layer.
+- In your Lambda function, add the Layer under "Layers" in the AWS Console or via CLI.
+
+Number of layers added will be displayed as above
+<img width="523" height="190" alt="image" src="https://github.com/user-attachments/assets/c3c38231-a93e-45a7-996a-d91a010014c6" />
+
+
+
 ## Diagram
 
 <img width="1273" height="530" alt="image" src="https://github.com/user-attachments/assets/f5f34bb5-331f-4242-bb46-40164b0ef25a" />
