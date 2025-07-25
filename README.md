@@ -56,6 +56,11 @@ Your Lambda function should have the following minimum permissions:
 
 ---
 
+## 🧩 Adding Dependencies to Lambda
+If your Lambda function uses external Python libraries (e.g., requests, pandas, boto3 outside the default), you’ll need to bundle your code with its dependencies and upload it as a .zip file.
+
+---
+
 ## Diagram
 
 <img width="1273" height="530" alt="image" src="https://github.com/user-attachments/assets/f5f34bb5-331f-4242-bb46-40164b0ef25a" />
